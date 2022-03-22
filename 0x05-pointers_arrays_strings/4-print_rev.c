@@ -2,22 +2,22 @@
 
 /**
  * print_rev - print a string
- * @s: input
+ * @str: input
  * Return: no return
  */
-void print_rev(char *s)
+void print_rev(char *str)
 {
 	int count = 0;
 
 	while (count >= 0)
 	{
-		if (s[count] == '\0')
+		if (str[count] == '\0')
 		{
 			break;
 		}
 		count++;
 	}
 	for (count--; count >= 0; count--)
-		_putchar(s[count]);
+		_putchar(str[count]);
 		_putchar('\n');
 }
