@@ -1,27 +1,24 @@
 #include "main.h"
+#include <string.h>
+
 /**
  * _strncat - concate
  * @dest: destination
- * @src: source
+ * @src: sourse
  * @n: amount
  * Return: pointer to dest
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
-	int count = 0, count2 = 0;
+	int count = strlen(dest), count2 = 0;
 
-	while (*(dest + count) != '\0')
+	while (count < n && *src)
 	{
-		count++;
+		dest[count + count2] = *src;
+		src++;
+		count2++;
 	}
-
-	while (count2 < n)
-	{
-		*(dest + count) = *(src + count2);
-	       if (*(src + count2) == '\0');
-	               break;
-	       count++;
-	       count2++;
-	}
-	return (dest);
+	dest[count + a] = '\0';
+        return (dest);
 }
