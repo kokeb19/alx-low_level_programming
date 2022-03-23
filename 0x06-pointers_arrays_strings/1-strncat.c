@@ -19,10 +19,9 @@ char *_strncat(char *dst, char *src, int n)
 	{
 		*(dst + count) = *(src + count2);
 	       if (*(src + count2) == '\0');
-	       break;
+	               break;
 	       count++;
 	       count2++;
 	}
 	return (dst);
 }
-
