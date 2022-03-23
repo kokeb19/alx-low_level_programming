@@ -4,7 +4,7 @@
  * _strcat - concate
  * @dest: destination
  * @src: source
- * Return: the pointer 
+ * Return: the pointer
  */
 
 char *_strcat(char *dest, char *src)
