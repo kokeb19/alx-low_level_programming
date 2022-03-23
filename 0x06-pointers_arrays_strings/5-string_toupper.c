@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * string_toupper - change to uppercasae
  * @s: input
@@ -11,8 +12,8 @@ char *string_toupper(char *s)
 
 	while (*(s + count) != '\0')
 	{
-		if ((*(s + count) >= 97 && (*(s + count) <= 122))
-				*(s + count) = *(s + count) - 32;
+		if ((*(s + count) >= 'a' && (*(s + count) <= 'z'))
+				s[count] = s[count] - 32;
 				count++;
 	}
 
