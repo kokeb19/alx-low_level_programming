@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * main - Prints abcdefghijklmnopqrstuvwxyz as a message.
+ * print_alphabet_x10 - Prints the alphabet 10 times.
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-  int str[] = {97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109,110 ,111, 112, 113, 114, 115, 116, 117, 118, 119 ,120, 121, 122};
-	int count, sz;
+	int a, b;
 
-	sz = sizeof(str) / sizeof(int);
-	for (count = 0; count < sz; count++)
+	for (a = 0; a <= 9; a++)
 	{
-		_putchar(str[count]);
-	}
+		for (b = 97; b <= 122; b++)
+		{
+			_putchar(b);
+		}
 	_putchar('\n');
-	return (0);
+	}
 }
