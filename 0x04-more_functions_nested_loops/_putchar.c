@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include "main.h"
+
 /**
  * _putchar - character c
  * @c: character
